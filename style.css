@@ -1,0 +1,477 @@
+/* j'enlève les padding que le navigateur met en place automatiquement */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.3 + 1/5);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+li{
+
+font-weight: bold;
+
+
+}
+
+
+
+
+.eco{
+  font-style: italic;
+  font-size: 1.4em;
+}
+
+b{
+  font-size: 1.3em;
+}
+
+.accueil {
+  margin-right: 60px;
+}
+.equipe {
+  margin-right: 60px;
+}
+
+.services {
+  margin-right: 60px;
+}
+
+.temoin {
+  margin-right: 60px;
+}
+
+.contact {
+  margin-right: 60px;
+}
+
+
+/* MENU BUGERKING */
+
+#icons{
+cursor: pointer;
+display: none;
+
+}
+
+@media (max-width: 668px) {
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    content: "\2630";
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    background:white;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+
+  }
+#icons{
+  padding-left:400px ;
+  font-size: 1.6em;
+}
+
+  nav li {
+    padding: 1px 0;
+   
+  }
+  .galerie{
+
+margin: 0 55px 0 0 ;
+
+  }
+  nav li:hover {
+    background: rgb(234, 238, 239);
+    width: 50%;
+   margin: 0 140px 0 140px;
+  }
+  nav.active ul {
+    left: 0;
+  }
+/* MENU BUGERKING fin!!!!!! */
+  .agen,.eco{
+
+    display: none;
+  }
+
+  #disparaitre{
+ 
+   display: none;
+  }
+
+}
+
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+title {
+  font-style: italic; 
+}
+
+/* ma barre de navigation d'accueil */
+
+.headerNav {
+  background: #d5f31f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo,
+h1 {
+  color: #053b44;
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+}
+
+
+#notre-equipe {
+  font-size: 2.5em;
+  color: var(--green);
+}
+
+#service {
+  font-size: 2.5em;
+  color: var(--green);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#contact-nous {
+  font-size: 3em;
+  color: var(--primary);
+}
+#galerie {
+  font-size: 2.5em;
+  color: var(--green);
+}
+
+.navindex {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.navequipe {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding-right: 20px;
+}
+.navservice {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding-right: 20px;
+}
+.navtemoignage {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding-right: 20px;
+}
+.navcontacte {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding-right: 20px;
+}
+.navgalerie {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding-right: 20px;
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* MES 2 TITRES PRINCIPAUX  */
+
+.accueil-introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+
+  width: auto;
+  height: 900px;
+  background-image: url("../images/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bienvenue {
+  margin: 0px 190px 0px 0px;
+
+  font-size: 4em;
+  color: white;
+}
+
+.agence {
+  margin: 0px 190px 130px 0px;
+  font-size: 5em;
+  color: #d5f31f;
+}
+/* ))))))))))PARTIE RESPONSIVE)))))))))))))))))))))))))))))))))))))))))))))))) */
+
+@media screen and (max-width: 866px) {
+  .navMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .navindex,
+  .navequipe,
+  .navservice {
+    margin: 0 0 0 25px;
+  }
+
+  .navtemoignage,
+  .navcontacte,
+  .navgalerie {
+    margin: 0 0 0 3px;
+  }
+
+  .accueil-introduction,
+  .bienvenue,
+  .agence {
+    font-size: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+  }
+}
+
+/* ///////////////////////871PX///////////////////// */
+@media screen and (max-width: 461px) {
+  .navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .navindex,
+  .navequipe,
+  .navservice {
+    margin: 0 0 0 25px;
+  }
+
+  .navtemoignage,
+  .navcontacte,
+  .navgalerie {
+    margin: 0 0 0 3px;
+  }
+
+  .accueil-introduction,
+  .bienvenue,
+  .agence {
+    font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 20px 0 0 0;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .agence {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 0 550px 0;
+  }
+}
