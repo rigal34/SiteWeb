@@ -526,11 +526,11 @@ body {
       from(rgba(255, 255, 255, 0.1)),
       to(rgba(0, 0, 0, 0.1))
     ),
-    url(../images/kTMKop6zc.png);
+    url(./images/kTMKop6zc.png);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../images/kTMKop6zc.png);
+    url(./images/kTMKop6zc.png);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../images/kTMKop6zc.png);
+    url(./images/kTMKop6zc.png);
   -o-object-fit: cover;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -550,11 +550,11 @@ body {
       from(rgba(255, 255, 255, 0.1)),
       to(rgba(0, 0, 0, 0.1))
     ),
-    url(../images/imagesR.png);
+    url(./images/imagesR.png);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../images/imagesR.png);
+    url(./images/imagesR.png);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../images/imagesR.png);
+    url(./images/imagesR.png);
   -o-object-fit: cover;
   object-fit: cover;
   background-repeat: no-repeat;
