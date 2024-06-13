@@ -1,11 +1,16 @@
-
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version ok
+*/
 
 html {
   --primary: #d5f31f;
   --sucess: #f9f9f9;
   --green: #029d5b;
   --gray: #565e65;
-  --bod: #1c2126;
+  --bod: #011001;
 }
 
 body {
@@ -65,10 +70,18 @@ body {
 .text-center {
   text-align: center;
 }
+.text-white {
+  color: white;
+}
 
 .mt-50 {
   margin-top: 46px;
 }
+
+
+/************ICI******************************
+
+
 /* VARIABLES */
 
 #notre-équipe {
@@ -108,15 +121,9 @@ body {
 .logo1 {
   width: 380px;
   height: 380px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(../images/Vector.jpg);
   background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/Vector.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url(../images/Vector.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(../images/Vector.jpg);
@@ -130,15 +137,9 @@ body {
 .logo2 {
   width: 380px;
   height: 380px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(../images/Vector-1.jpg);
   background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/Vector-1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url(../images/Vector-1.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(../images/Vector-1.jpg);
@@ -147,78 +148,80 @@ body {
   border-radius: 15%;
   margin: 80px 0 0 0;
 }
+/* 
 
-.mots-souligne1 {
-  color: var(--sucess);
-  font-size: 1em;
-  margin: 0 200px 0 0;
+*/
+
+.formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 700px;
 }
 
-.le-trait1 {
-  border: 1px solid var(--sucess);
-  width: 60%;
-  margin: 0 0 0 180px;
+#nom {
+  background: #053b44;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  color: white;
+  font-weight: bold;
+  width: 300px;
+  margin: 0 0 0 0px;
 }
 
-.mots-souligne2 {
-  color: var(--sucess);
-  font-size: 1em;
-  margin: 0 480px 0 0;
+#categorie {
+  background: #053b44;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 300px;
+  margin: 0 0px 0 0px;
+
+  color: white;
+  font-weight: bold;
+}
+#telephone {
+  background: #053b44;
+
+  color: white;
+  font-weight: bold;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 300px;
+  margin: 0px 0 0 0px;
+}
+#ville {
+  background: #053b44;
+
+  color: white;
+  font-weight: bold;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 300px;
+  margin: 0px 0 0 0px;
 }
 
-.le-trait2 {
-  border: 1px solid var(--sucess);
-  width: 60%;
-  margin: 0 0 0 20px;
+#email {
+  background: #053b44;
+  color: white;
+  font-weight: bold;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 900px;
+  margin: 0px 150px 0 0px;
 }
 
-.mots-souligne3 {
-  color: var(--sucess);
-  font-size: 1em;
-  margin: 40px 155px 0 0;
-}
 
-.le-trait3 {
-  border: 1px solid var(--sucess);
-  width: 60%;
-  margin: 0 0px 0 180px;
-}
-
-.mots-souligne4 {
-  color: var(--sucess);
-  font-size: 1em;
-  margin: 40px 530px 0 0;
-}
-
-.le-trait4 {
-  border: 1px solid var(--sucess);
-  width: 60%;
-  margin: 0 0 0 20px;
-}
-
-.mots-souligne5 {
-  color: var(--sucess);
-  font-size: 1em;
-  margin: 40px 800px 0 0;
-}
-
-.le-trait5 {
-  border: 1px solid var(--sucess);
-  width: 67%;
-  margin: 0 0 0 180px;
-}
-
-.mots-souligne6 {
-  color: var(--sucess);
-  font-size: 1em;
-  margin: 40px 765px 0 0;
-}
-
-.le-traitVide {
-  border: 1px solid var(--sucess);
-  width: 67%;
-  margin: 17% 0 0 180px;
-}
 
 .button {
   display: -webkit-box;
@@ -240,12 +243,18 @@ body {
   width: 100px;
   height: 35px;
   border-radius: 13px;
-  margin: 0px 0 0 0px;
+  margin: 0px 0px 0 0px;
   font-size: 0.8em;
   color: #029d5b;
   font-weight: bolder;
-  margin: 3% 0 0 74%;
+  margin: 3% 0 0 79%;
 }
+
+.button{
+margin-left: 1095px;
+
+}
+
 
 .reunion {
   width: 500px;
@@ -292,15 +301,9 @@ body {
 .ecologie {
   width: 80px;
   height: 80px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(../images/Vector\ redim-2.jpg);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/Vector\ redim-2.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url(../images/Vector\ redim-2.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
     url(../images/Vector\ redim-2.jpg);
@@ -318,15 +321,9 @@ body {
 .responsable {
   width: 80px;
   height: 80px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(../images/Vector\ redim-3.jpg);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/Vector\ redim-3.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url(../images/Vector\ redim-3.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
     url(../images/Vector\ redim-3.jpg);
@@ -343,15 +340,9 @@ body {
 .time {
   width: 80px;
   height: 80px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(../images/Vector\ redim-4.jpg);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/Vector\ redim-4.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url(../images/Vector\ redim-4.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
     url(../images/Vector\ redim-4.jpg);
@@ -380,41 +371,50 @@ body {
   padding-bottom: 0;
 }
 
-.lg {
+.button1{
   width: 40px;
   height: 40px;
-  background-color: var(--sucess);
+   border-radius: 50%;
+   border: solid 1px ;
+   background-color: white;
+   color:grey;
+  margin-right: 200px;
+   
+ }
 
+
+.button2{
+ width: 40px;
+ height: 40px;
   border-radius: 50%;
-  border-style: solid;
-  color: var(--gray);
-  margin: 10px 0 0 50px;
+  border: solid 1px;
+
+ background-color: white;
+  color:grey;
+  margin-left: 200px;
+
 }
 
-.ld {
-  width: 40px;
-  height: 40px;
+.button1:hover {
+
   background-color: black;
-
-  border-radius: 50%;
-  border-style: solid;
-  border-color: black;
-  color: var(--primary);
-  margin: 10px 45px 0 0px;
+  color:yellow;
 }
 
-.balise {
-  text-align: center;
 
-  font-size: 1.5em;
+.button2:hover {
+
+  background-color: black;
+  color:yellow;
+
 }
 
-.balise2 {
-  text-align: center;
 
-  font-size: 1.5em;
+
+
+.photos{
+  border-radius: 1%;
 }
-
 .next {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,15 +464,9 @@ body {
 .facebook {
   width: 35px;
   height: 35px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(../images/29-295236_logo-facebook-icon-png-file-hd-clipart-cross.png);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../images/29-295236_logo-facebook-icon-png-file-hd-clipart-cross.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url(../images/29-295236_logo-facebook-icon-png-file-hd-clipart-cross.png);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
     url(../images/29-295236_logo-facebook-icon-png-file-hd-clipart-cross.png);
@@ -519,18 +513,12 @@ body {
 .twitter {
   width: 35px;
   height: 35px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(./images/kTMKop6zc.png);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(./images/kTMKop6zc.png);
+    url(../images/kTMKop6zc.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1))),
+    url(../images/kTMKop6zc.png);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(./images/kTMKop6zc.png);
+    url(../images/kTMKop6zc.png);
   -o-object-fit: cover;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -543,18 +531,12 @@ body {
 .instagram {
   width: 35px;
   height: 35px;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.1)),
-      to(rgba(0, 0, 0, 0.1))
-    ),
-    url(./images/imagesR.png);
   background: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(./images/imagesR.png);
+    url(../images/imagesR.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1))),
+    url(../images/imagesR.png);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)),
-    url(./images/imagesR.png);
+    url(../images/imagesR.png);
   -o-object-fit: cover;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -574,8 +556,39 @@ body {
 .facebook {
   margin: 29px 0px 20px 360px;
 }
+@media screen and (max-width: 976px) {
+ .button1{
+    margin: 0;
+ }
+  }
+  @media screen and (max-width: 976px) {
+    .button2{
+       margin: 0;
+    }
+     }
+   
 
 @media screen and (max-width: 601px) {
+  #nom {
+    margin: 0;
+  }
+
+  #email {
+    margin: 0;
+    width: 68%;
+  }
+
+  textarea {
+    min-width: 300px;
+    min-height: 200px;
+  }
+  .button1{
+margin-left: 10px;
+
+  }
+  .button2{
+    margin-right: -270px;
+  }
   .col-sm-100 {
     width: 100%;
   }
@@ -604,94 +617,21 @@ body {
     border-radius: 7%;
     border-style: solid;
     border-color: #029d5b;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction:row;
-    
-  }
-  
-
-
-
-  .mots-souligne1 {
-    color: var(--sucess);
-  font-size: 1em;
-  margin: -50px 200px 0 0;
-
-    
-  }
-  .le-trait1 {
-    margin: 0 0px 30px 110px;
-  }
-
-  .mots-souligne2 {
-    color: var(--sucess);
-  font-size: 1em;
-  margin: 10px 150px 0 0;
-  }
-
-  .le-trait2 {
-    margin: 0 0px 30px 110px;
-  }
-
-  .mots-souligne3 {
-    color: var(--sucess);
-  font-size: 1em;
-  margin: 10px 145px 0 0;
-  }
-
-  .le-trait3 {
-    margin: 0 0px 30px 110px;
-  }
-
-  .mots-souligne4 {
-    color: var(--sucess);
-  font-size: 1em;
-  margin: 10px 190px 0 0;
-  }
-
-  .le-trait4 {
-    margin: 0 0px 30px 110px;
-  }
-
-  .mots-souligne5 {
-    margin: 30px 180px 0 0;
-  }
-
-  .le-trait5 {
-    color: var(--sucess);
-  font-size: 1em;
-  margin: 0 0 0 110px;
-  width: 60%;
-  }
-
- 
-
-  .mots-souligne6 {
-
-    color: var(--sucess);
-    font-size: 1em;
-    margin: 40px 144px 0 0;
-
-    
-  }
-
-
-  .le-traitVide {
-    margin: 12% 0px 10px 110px;
-    width: 60%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .photos {
     width: 435px;
     height: 380px;
   }
-  .lg {
-    margin: auto 0;
-  }
-
-  .ld {
-    margin-right: -220px;
-  }
+ 
+ 
 
   .facebook {
     margin: 20px 0 0 0;
@@ -703,26 +643,63 @@ body {
   .instagram {
     margin: 20px 0 0 -10px;
   }
-  .lg {
-    width: 40px;
-    height: 40px;
-    background-color: var(--sucess);
+  
 
-    border-radius: 50%;
-    border-style: solid;
-    color: var(--gray);
-    margin: 10px 0 0 50px;
-  }
+  
 
-  .ld {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-
-    border-radius: 50%;
-    border-style: solid;
-    border-color: black;
-    color: var(--primary);
-    margin: 10px -155px 0 0px;
+  .button {
+    margin: 3% 0 0 40%;
   }
 }
+
+textarea {
+  border-bottom: solid 3px white ;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea{
+  background: transparent;
+ 
+  border: none;
+  resize: none;
+  
+  }
+
+
+
+
+.pt-50 {
+  padding-top: 50px;
+}
+.form-control {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+}
+.form-control::-webkit-input-placeholder {
+  color: white;
+}
+.form-control::-moz-placeholder {
+  color: white;
+}
+.form-control:-ms-input-placeholder {
+  color: white;
+}
+.form-control::-ms-input-placeholder {
+  color: white;
+}
+.form-control::placeholder {
+  color: white;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+
