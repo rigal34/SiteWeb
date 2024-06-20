@@ -25,7 +25,7 @@ a {
   color: black;
 }
 
-.accueil {
+.accueil {a
   margin-right: 60px;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;

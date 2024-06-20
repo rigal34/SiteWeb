@@ -569,14 +569,47 @@ margin-left: 1095px;
    
 
 @media screen and (max-width: 601px) {
-  #nom {
-    margin: 0;
-  }
 
-  #email {
-    margin: 0;
-    width: 68%;
-  }
+
+#mail{
+  width:430px ;
+  margin:0 0 0 50px;
+
+}
+
+#category{
+
+  width:430px ;
+  margin:0 0 0 40px;
+
+}
+#Ville{
+
+  width:430px ;
+  margin:0 0 0 40px;
+
+}
+#tel{
+
+  width:430px ;
+  margin:0 0 0 40px;
+
+}
+
+#name{
+
+  width:430px ;
+  margin:0 0 0 40px;
+
+}
+
+#me{
+
+  width:430px ;
+  margin:0 0 0 40px;
+
+}
+
 
   textarea {
     min-width: 300px;
@@ -587,7 +620,8 @@ margin-left: 10px;
 
   }
   .button2{
-    margin-right: -270px;
+    margin-right: -440px;
+
   }
   .col-sm-100 {
     width: 100%;
@@ -651,6 +685,15 @@ margin-left: 10px;
     margin: 3% 0 0 40%;
   }
 }
+
+@media screen and (max-width: 601px) {
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 
 textarea {
   border-bottom: solid 3px white ;
